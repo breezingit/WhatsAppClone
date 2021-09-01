@@ -19,6 +19,13 @@ export type RootStackParamList = {
   NotFound: undefined;
 };
 
+export type MainTabParamList={
+  Camera:undefined;
+  Chats:undefined;
+  Status:undefined;
+  Calls:undefined;
+};
+
 export type RootStackScreenProps<Screen extends keyof RootStackParamList> = NativeStackScreenProps<
   RootStackParamList,
   Screen
